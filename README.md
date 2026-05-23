@@ -14,7 +14,7 @@ Fraudulent ones take ~3 days. They're not dealing with paperwork
 they're fabricating records and want payment quickly.
 
 **Fraudsters overbill significantly.**
-Average legitimate claim: 533 INR. Average fraudulent claim: 981 dollars. 
+Average legitimate claim: 533 $. Average fraudulent claim: 981 dollars. 
 Nearly double. But they only get approved for slightly more than 
 legitimate claimants the overbilling gets caught at approval stage 
 but some still slip through.
@@ -23,7 +23,6 @@ These two observations alone predicted what the model later confirmed.
 
 ## Model Results
 | Metric | Score |
-|---|---|
 | Accuracy | 98.4% |
 | Precision | 96.4% |
 | Recall | 83.7% |
@@ -38,7 +37,7 @@ the dataset with synthetic data — which could introduce patterns that don't ex
 ## What the model actually means in business terms
 - Dataset had 630 fraud cases out of 7,599 claims (~8% fraud rate)
 - Model catches 527 of those 630 fraud cases
-- Average fraudulent claim: 981 INR
+- Average fraudulent claim: 981 $
 - Estimated fraud caught per cycle: ~516,987 $
 - Missed fraud (16%): ~103 cases = ~101,043 $ still slipping through
 
@@ -65,9 +64,6 @@ is processed. In healthcare where claims settle in days not months,
 a real deployment would need pre-payment scoring at submission stage 
 using features available at the moment of filing.
 
-The next version of this project applies the same logic to 
-general insurance (motor claims) where the longer settlement 
-tail gives the model time to flag fraud before payment.
 
 ## Tech Stack
 - Python, Pandas, Scikit-learn, Matplotlib
